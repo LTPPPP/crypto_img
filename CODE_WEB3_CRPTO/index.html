@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Image Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button onclick="connectMetamask()">CONNECT TO METAMASK</button> <br>
+    <p id="accountArea"></p>
+    <button onclick="connectContract()">CONNECT TO CONTRACT</button> <br>
+    <p id="contractArea"></p>
+
+    <div class="drap">
+        <h1>NFT Image Uploader</h1>
+        <input type="file" id="fileInput">
+        <div id="imageContainer"></div>
+    </div>
+
+    <button onclick="readContract()">Store URI TO CONTRACT</button> <br>
+    <p id="dataArea"></p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+
+    <script src="sever.js"></script>
+    <!-- <script src="file.js"></script> -->
+</body>
+
+</html>
